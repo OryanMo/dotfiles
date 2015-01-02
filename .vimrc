@@ -1,3 +1,4 @@
+"Setting misc settings"
 syntax on
 set number
 set autoindent
@@ -18,6 +19,7 @@ filetype plugin on
 :command W w
 :command Q q
 :command B b
+
 "Disabling the arrow keys"
 no <down> <Nop>
 no <up> <Nop>
@@ -32,7 +34,4 @@ vno <up> <Nop>
 vno <right> <Nop>
 vno <left> <Nop>
 
-"Mapping"
-nnoremap <C-S> :w<CR> 
-inoremap <C-S> <ESC>:w<CR>i 
-
+"Mapping misc keys"
