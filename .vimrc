@@ -12,6 +12,8 @@ set wildmenu
 execute pathogen#infect()
 filetype plugin indent on
 filetype plugin on
+set list
+set listchars=tab:→\ ,eol:¬,trail:.
 
 "Fixing typos"
 :command WQ wq
@@ -34,4 +36,10 @@ vno <up> <Nop>
 vno <right> <Nop>
 vno <left> <Nop>
 
-"Mapping misc keys"
+"Mapping splitting settings"
+nnoremap <C-J> <C-W><C-J>
+nnoremap <C-K> <C-W><C-K>
+nnoremap <C-L> <C-W><C-L>
+nnoremap <C-H> <C-W><C-H>
+set splitbelow
+set splitright
